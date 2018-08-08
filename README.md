@@ -12,3 +12,8 @@ This is a repo I created to track my progress and holds my solution for the [fro
 - Completed the Loop 1 - Step 1.
 - Had to take a look at the solution code to figure out on how to display the price.
 - Use `float` to display the layout because the items have different height.
+
+## August 8th, 2018
+
+- Updated to use `flex` layout instead of using `float`.
+- Removed a lot of redundant code!
