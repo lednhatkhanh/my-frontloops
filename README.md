@@ -21,3 +21,7 @@ This is a repo I created to track my progress and holds my solution for the [fro
 ## August 9th, 2018
 
 - Use `:before` and `:after` to style the price, remove a lot of markup!
+
+## August 9th, 2018
+
+- Completed Loop 1 - Step 2.

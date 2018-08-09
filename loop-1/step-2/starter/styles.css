@@ -1,0 +1,135 @@
+*,
+*::before
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background: url("img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Roboto, sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: .4rem;
+    width: 35rem;
+    margin: 10rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
+}
+
+.card__dot {
+    display: inline-block;
+    height: .7rem;
+    width: .7rem;
+    background-color: #dedede;
+    border-radius: 50%;
+}
+
+.card__dot--selected {
+    background-color: #aaaaaa;
+}
+
+.card__dot:not(:last-child) {
+    margin-right: .4rem;
+}
+
+.card__title {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 2rem 0 3rem 0;
+}
+
+.card__options {
+    align-self: stretch;
+}
+
+.card__option {
+    color: #aaaaaa;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    border-top: .1rem solid rgba(196, 193, 193, 0.678);
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.card__option:hover {
+    background-color: #F6F6F6;
+}
+
+.card__option--selected {
+    color: #000;
+}
+
+.card__option-img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.card__option-text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.card__button:link,
+.card__button:visited {
+    height: 6rem;
+    background-color: #5a8bdd;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    align-self: stretch;
+    cursor: pointer;
+    text-decoration: none;
+
+    position: relative;
+    transition: all .1s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__button::after {
+    content: "";
+    background-image: url("img/arrow.svg");
+    background-size: cover;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    margin-left: .4rem;
+}
+
+.card__button:focus {
+    outline: none;
+}
+
+.card__button:hover,
+.card__button:focus {
+    background-color: #558EF3;
+}
+
+.card__button:active {
+    top: 1px;
+}
