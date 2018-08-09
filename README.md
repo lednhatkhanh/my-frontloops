@@ -17,3 +17,7 @@ This is a repo I created to track my progress and holds my solution for the [fro
 
 - Updated to use `flex` layout instead of using `float`.
 - Removed a lot of redundant code!
+
+## August 9th, 2018
+
+- Use `:before` and `:after` to style the price, remove a lot of markup!

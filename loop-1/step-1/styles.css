@@ -74,11 +74,22 @@ body {
     text-align: center;
 }
 
-.item__value {
+.item__price {
     font-size: 3rem;
     font-weight: 500;
 }
 
-.item__currency {
+.item__price::before {
+    content: "$";
+    vertical-align: super;
     font-size: 1.5rem;
+    display: inline-block;
+}
+
+.item__price::after {
+    display: inline-block;
+    content: "/ month";
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: .4rem;
 }
