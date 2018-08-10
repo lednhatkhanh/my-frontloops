@@ -7,21 +7,21 @@ This is a repo I created to track my progress and holds my solution for the [fro
 - All solutions must work with Chrome, Firefox, EDGE and Safari, last 2 versions should be fine.
 - The prefix, if necessary, must be added **manually**.
 
-## August 8th, 2018
+## August 9th, 2018
 
-- Completed the Loop 1 - Step 1.
-- Had to take a look at the solution code to figure out on how to display the price.
-- Use `float` to display the layout because the items have different height.
+- Completed Loop 1 - Step 2.
+
+## August 9th, 2018
+
+- Use `:before` and `:after` to style the price, remove a lot of markup!
 
 ## August 8th, 2018
 
 - Updated to use `flex` layout instead of using `float`.
 - Removed a lot of redundant code!
 
-## August 9th, 2018
+## August 8th, 2018
 
-- Use `:before` and `:after` to style the price, remove a lot of markup!
-
-## August 9th, 2018
-
-- Completed Loop 1 - Step 2.
+- Completed the Loop 1 - Step 1.
+- Had to take a look at the solution code to figure out on how to display the price.
+- Use `float` to display the layout because the items have different height.
