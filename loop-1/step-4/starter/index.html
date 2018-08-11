@@ -9,6 +9,55 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  
+  <div class="chat">
+    <div class="chat__head">
+      <span class="chat__username">Mark Zuckerberg</span>
+      <span class="chat__close"></span>
+    </div>
+
+    <div class="chat__content">
+      <div class="chat__separator">
+        <span class="chat__date">Today</span>
+      </div>
+
+      <div class="message">
+        <div class="message__time">
+          10:53
+        </div>
+        <div class="message__content">
+          Hi, Mark! I made a new design for Messenger App.
+        </div>
+      </div>
+
+      <div class="message message--incoming">
+        <div class="message__time">
+          10:57
+        </div>
+        <div class="message__content">
+            Yo! Send it to my assistant and we'll review it during the year.
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message__time">
+          11:03
+        </div>
+        <div class="message__content">
+            But Mark...
+        </div>
+      </div>
+
+      <div class="message message--incoming message--error">
+        <div class="message__content">
+          You were blocked by the user.
+        </div>
+      </div>
+
+      <form action="#" class="chat__bottom">
+          <input type="text" class="chat__input" placeholder="Enter your message here">
+          <button class="chat__submit" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

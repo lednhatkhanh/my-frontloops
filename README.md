@@ -9,6 +9,10 @@ This is a repo I created to track my progress and holds my solution for the [fro
 
 ## August 10th, 2018
 
+- Completed Loop 1 - Step 4.
+
+## August 10th, 2018
+
 - Completed Loop 1 - Step 3.
 
 ## August 9th, 2018
