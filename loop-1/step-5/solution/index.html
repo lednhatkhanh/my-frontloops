@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 5</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:900" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Hints:
+
+    1.
+    You should use background-size: cover for such background images in order to render it properly on all screen sizes.
+
+    2.
+    Like in previous designs, it's a nice idea to use same code for all value sections,
+    whether they're positioned horizontally or vertically.
+    Positioning can be handled with separate wrappers.
+
+  -->
+
+  <div class="root">
+    <div class="ticket">
+      <div class="ticket__main">
+        <div class="ticket__location">
+          <div class="ticket__code">
+            FRA
+          </div>
+          <div class="ticket__city">
+            Frankfurt
+          </div>
+        </div>
+        <div class="ticket__connector">&mdash;</div>
+        <div class="ticket__location ticket__location_destination">
+          <div class="ticket__code">
+            AMS
+          </div>
+          <div class="ticket__city">
+            Amsterdam
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket__additional">
+        <div class="columns">
+          <div class="columns__item columns__item_third">
+            <div class="ticket__section">
+              <div class="ticket__label">
+                Flight
+              </div>
+              <div class="ticket__value">
+                815
+              </div>
+            </div>
+          </div><!--
+          --><div class="columns__item columns__item_third">
+          <div class="ticket__section">
+            <div class="ticket__label">
+              Gate
+            </div>
+            <div class="ticket__value">
+              23G
+            </div>
+          </div>
+          </div><!--
+          --><div class="columns__item columns__item_third">
+          <div class="ticket__section">
+            <div class="ticket__label">
+              Seat
+            </div>
+            <div class="ticket__value">
+              10F
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket__meta">
+        <div class="columns">
+          <div class="columns__item columns__item_half">
+            <div class="ticket__section">
+              <div class="ticket__label">
+                Passenger
+              </div>
+              <div class="ticket__value">
+                Robert De Niro
+              </div>
+            </div>
+
+            <div class="ticket__section">
+              <div class="ticket__label">
+                Class
+              </div>
+              <div class="ticket__value">
+                Business
+              </div>
+            </div>
+
+            <div class="ticket__section">
+              <div class="ticket__label">
+                Departure
+              </div>
+              <div class="ticket__value">
+                3:45am, Dec 15
+              </div>
+            </div>
+          </div><!--
+          --><div class="columns__item columns__item_half">
+            <img src="./img/qr.svg" class="ticket__qr" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
