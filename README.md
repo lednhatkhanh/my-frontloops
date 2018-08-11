@@ -7,6 +7,10 @@ This is a repo I created to track my progress and holds my solution for the [fro
 - All solutions must work with Chrome, Firefox, EDGE and Safari, last 2 versions should be fine.
 - The prefix, if necessary, must be added **manually**.
 
+## August 10th, 2018
+
+- Completed Loop 1 - Step 3.
+
 ## August 9th, 2018
 
 - Completed Loop 1 - Step 2.

@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #16a085;
+    font-family: Roboto, sans-serif;
+}
+
+.card {
+    width: 55rem;
+    background-color: #fff;
+    margin: 10rem auto;
+    border-radius: .4rem;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem;
+    padding-bottom: 20rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .4);
+}
+
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__icon {
+    width: 4.4rem;
+    height: 4.4rem;
+    padding: .8rem;
+    border: .1rem solid #dedede;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-in;
+    cursor: pointer;
+}
+
+.card__icon:hover {
+    box-shadow: 0 0 0 .4rem rgba(0, 0, 0, .05);
+}
+
+.card__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.card__subtitle {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #aaa;
+}
+
+.card__orders {
+    margin-top: 3rem;
+}
+
+.card__order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card__order:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.card__order-name {
+    color: #5c5c5c;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.card__order-total {
+    text-transform: uppercase;
+}
+
+.card__img {
+    background: url("img/bicycle.png") no-repeat 50% 0;
+    background-size: cover;
+    height: 28rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
