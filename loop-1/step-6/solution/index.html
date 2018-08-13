@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 6</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Hints:
+
+    1.
+    We have some buttons with centered text and an icon on the side here.
+    Your css should be prepared for handling more text in buttons as well.
+    A good way to solve the problem is to set horizontal paddings for both sides (so text stays centered)
+
+    2.
+    The best way to handle margins between buttons is to add another class for it.
+    If we'd just set default margins for all buttons in our project - that can cause problems
+    once you need to use buttons in other page areas.
+
+  -->
+
+  <div class="root">
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__content">
+          <div class="card__title">
+            Become a member
+          </div>
+          <div class="card__subtitle">
+            Use social networks to join us instantly.<br />
+            You won't spend any time confirming those boring emails.
+          </div>
+          <div class="card__buttons">
+            <button class="button card__button">
+              <img src="./img/googleplus.svg" class="button__icon" />
+              <span class="button__text">
+                Sign up with Google+
+              </span>
+            </button>
+
+            <button class="button card__button">
+              <img src="./img/facebook.svg" class="button__icon" />
+              <span class="button__text">
+                Sign up with Facebook
+              </span>
+            </button>
+
+            <button class="button card__button">
+              <img src="./img/twitter.svg" class="button__icon" />
+              <span class="button__text">
+                Sign up with Twitter
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="card__additional">
+          <div class="card__note">
+            You can still sign up with your email address
+          </div>
+          <a href="#" class="card__email">
+            Sign up with email
+          </a>
+        </div>
+      </div>
+      <div class="card__side"></div>
+    </div>
+  </div>
+</body>
+</html>
