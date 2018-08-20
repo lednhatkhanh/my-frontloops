@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #4E515D;
+}
+
+.card {
+    margin: 10rem auto;
+    height: 80rem;
+    width: 160rem;
+    background-color: #fff;
+    box-shadow: 0 22px 50px rgba(14, 21, 47, .2), 0 8px 20px rgba(14, 21, 47, .2);
+
+    border-radius: .4rem;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 50rem;
+    grid-template-rows: 1fr 10rem;
+}
+
+.card__img-container {
+    width: 100%;
+
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    flex: 1;
+
+    padding: 10rem 5rem 5rem 5rem;
+}
+
+.card__title {
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+.card__subtitle {
+    font-size: 1.6rem;
+    color: #aaa;
+    line-height: 2rem;
+    margin-top: 1.6rem;
+}
+
+.card__btns {
+    margin-top: 6rem;
+}
+
+.card__footer {
+    border-top: 1px solid #f1f1f1;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.card__note {
+    margin-right: auto;
+}
+
+.card__email {
+    color: #8b8b8c;
+    transition: color 0.15s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.card__email:hover {
+    color: #000;
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid #EEF0F3;
+    width: 100%;
+    display: flex;
+    border-radius: .4rem;
+    cursor: pointer;
+    padding: 2rem 6rem;
+    align-items: center;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    border-color: #fff;
+    box-shadow: 0 .6rem 3rem 0 rgba(0,0,0, 0.08);
+    color: #333;
+} 
+
+.btn__icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.btn__text {
+    color: #8b8b8c;
+    flex: 1;
+    font-size: 1.4rem;
+}
+
+.-u-m-t-medium {
+    margin-top: 6rem;
+}
