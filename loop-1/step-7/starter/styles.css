@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #F2CE97;
+}
+
+.card {
+    margin: 10rem auto;
+    max-width: 80rem;
+    background-color: #fff;
+    box-shadow: 0 22px 50px rgba(14, 21, 47, .1), 0 8px 20px rgba(14, 21, 47, .1);
+
+   display: flex;
+}
+
+.card__info {
+    width: 40%;
+    background-color: #484956;
+    color: #fff;
+    padding: 6rem 0rem 3rem 3rem;
+    font-size: 1.6rem;
+
+    display: grid;
+    grid-template-rows: 1fr max-content;
+}
+
+.card__subtitle::before {
+    content: "";
+    position: absolute;
+    height: .4rem;
+    background-color: #E37B62;
+    bottom: -2rem;
+    left: 0;
+    width: 40%;
+}
+
+.card__title {
+    font-weight: 500;
+}    
+
+.card__subtitle {
+    position: relative;
+    font-weight: 300;
+}
+
+.card__author {
+    align-self: center;
+
+    font-size: 2rem;
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    grid-column-gap: 2rem;
+}
+
+.card__author-avatar {
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+}
+
+.card__content {
+    flex: 1;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 3rem;
+}
+
+.card__text {
+    padding: 6rem 4rem 0;
+}
+
+.card__paragraph {
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.card__paragraph:not(:first-child) {
+    margin-top: 1.6rem;
+}
+
+.card__paragraph:first-child:first-letter {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card__meta {
+    box-shadow: 0 -8px 10px rgba(14, 21, 47, .04);
+    padding: 3rem 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+}
+
+.card__date {
+    font-size: 1.4rem;
+}
+
+.card__action {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, auto);
+    font-size: 1.4rem;
+    grid-column-gap: .6rem;
+    color: #aaa;
+}
+
+.card__action:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.card__action-icon {
+    font-size: 1.6rem;
+}
