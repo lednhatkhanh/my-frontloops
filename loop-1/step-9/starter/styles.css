@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #F7CD76;
+}
+
+.card {
+    margin: 10rem auto;
+    max-height: 50rem;
+    width: 80rem;
+    background-color: #fff;
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+
+    display: flex;
+}
+
+.card__side {
+    flex: 0 0 40%;
+    overflow-y: auto;
+
+    background-color: #F2F2F2;
+    padding: 0 4rem 4rem 4rem;
+
+    display: grid;
+    grid-template-rows: 20% 1fr;
+}
+
+.card__nav {
+    grid-row: 1 / 2;
+
+    align-self: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__nav-title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card__nav-button {
+    cursor: pointer;
+}
+
+.card__list {
+    grid-row: 2 / 3;
+    list-style: none;
+}
+
+.card__item {
+    background-color: #fff;
+    border-radius: .4rem;
+    width: 100%;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: flex-start;
+}
+
+.card__item:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+.card__item:hover,
+.card__item-active {
+    box-shadow: 0 0 0 2px #8793C6;
+}
+
+.card__item-img {
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.card__item-number {
+    margin-bottom: 1rem;
+}
+
+.card__content {
+    padding: 0 4rem 4rem 4rem;
+    flex: 1;
+    overflow-y: auto;
+
+    display: grid;
+    grid-template-rows: 20% 1fr;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #aaa;
+}
+
+.card__title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.price__cent {
+    font-size: 1rem;
+    vertical-align: super;
+}
+
+.price--total {
+    font-size: 3rem;
+}
+
+.price--total .price__cent {
+    font-size: 1.6rem;
+}
+
+.price--minus {
+    color: #8897C6;
+}
+
+.price--plus {
+    color: #8BCD5E;
+  }
+
+.card__histories {
+    list-style: none;
+
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__history {
+    display: grid;
+
+    grid-template-columns: min-content 1fr min-content;
+    grid-column-gap: 2rem;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+
+.card__history:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+.card__history-type {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    padding: .6rem;
+}
+
+.card__history-title {
+    font-size: 1.8rem;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.card__history-detail {
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+.card__history-price {
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+}

@@ -1,0 +1,10 @@
+.explore {
+    height: 100rem;
+    background-image: url(../../img/runners.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

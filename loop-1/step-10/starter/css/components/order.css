@@ -1,0 +1,11 @@
+.order {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order__img {
+    height: 100%;
+}

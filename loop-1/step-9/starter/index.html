@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,86 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
 
+<body>
+  <div class="card">
+    <div class="card__side">
+
+      <div class="card__nav">
+        <h1 class="card__nav-title">My Wallets</h1>
+        <img src="img/plus.svg" alt="Plus Button" class="card__nav-button">
+      </div>
+
+      <ul class="card__list">
+        <li class="card__item">
+          <img src="img/visa.svg" alt="Visa Card Image" class="card__item-img">
+          <span class="card__item-number">**** **** **** 2562</span>
+          <span class="card__item-valid">Valid thru: 12/17</span>
+        </li>
+        <li class="card__item card__item-active">
+          <img src="img/mastercard.svg" alt="Master Card Image" class="card__item-img">
+          <span class="card__item-number">**** **** **** 2101</span>
+          <span class="card__item-valid">Valid thru: 07/19</span>
+        </li>
+        <li class="card__item">
+          <img src="img/maestro.svg" alt="Maestro Card Image" class="card__item-img">
+          <span class="card__item-number">**** **** **** 8335</span>
+          <span class="card__item-valid">Valid thru: 09/17</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card__content">
+      <div class="card__header">
+        <h1 class="card__title">Current Balance</h1>
+        <span class="price price--total">$729.<span class="price__cent">00</span></span>
+      </div>
+
+      <ul class="card__histories">
+        <li class="card__history">
+          <img src="img/minus.svg" alt="Minus Icon" class="card__history-type">
+          <h3 class="card__history-title">Apple iPhone 7, 128GB</h3>
+          <span class="card__history-detail">Electronics #32343424 - 12 July 2015</span>
+          <div class="card__history-price price price--minus">$650.<span class="price__cent">00</span></div>
+        </li>
+
+        <li class="card__history">
+          <img src="img/plus.svg" alt="Plus Icon" class="card__history-type">
+          <h3 class="card__history-title">Funds Added</h3>
+          <span class="card__history-detail">Payment #5435 - 11 July 2015</span>
+          <div class="card__history-price price price--plus">$900.<span class="price__cent">00</span></div>
+        </li>
+
+        <li class="card__history">
+          <img src="img/minus.svg" alt="Minus Icon" class="card__history-type">
+          <h3 class="card__history-title">Energy Bill</h3>
+          <span class="card__history-detail">Other #745237423 - 11 July 2015</span>
+          <div class="card__history-price price price--minus">$84.<span class="price__cent">00</span></div>
+        </li>
+
+        <li class="card__history">
+          <img src="img/minus.svg" alt="Minus Icon" class="card__history-type">
+          <h3 class="card__history-title">The Eye Cinema Ticket</h3>
+          <span class="card__history-detail">Entertainment #32343424 - 10 July 2015</span>
+          <div class="card__history-price price price--minus">$48.<span class="price__cent">00</span></div>
+        </li>
+
+        <li class="card__history">
+          <img src="img/minus.svg" alt="Minus Icon" class="card__history-type">
+          <h3 class="card__history-title">McFood Restaurant</h3>
+          <span class="card__history-detail">Cafes #32448 - 10 July 2015</span>
+          <div class="card__history-price price price--minus">$10.<span class="price__cent">50</span></div>
+        </li>
+
+        <li class="card__history">
+          <img src="img/minus.svg" alt="Minus Icon" class="card__history-type">
+          <h3 class="card__history-title">Gas Station</h3>
+          <span class="card__history-detail">Other #2138453 - 10 July 2015</span>
+          <div class="card__history-price price price--minus">$38.<span class="price__cent">00</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,36 @@
+.promo {
+    display: grid;
+    max-width: 40rem;
+    grid-template-rows: min-content;
+    grid-row-gap: 6rem;
+    justify-content: start;
+    justify-items: start;
+}
+
+.promo__title {
+    font-size: 4rem;
+}
+
+.promo__text {
+    font-size: 1.6rem;
+    color: #aaa;
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 3rem;
+}
+
+.promo__text::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: .2rem;
+    background-color: currentColor;
+}
+.promo--white-text {
+    color: #fff;
+}
+
+.promo--white-text .promo__text {
+    color: #fff;
+}
