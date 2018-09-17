@@ -1,0 +1,137 @@
+body,
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#B885E5 0%, #848AF1 100%) no-repeat;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.root {
+  width: 300px;
+  margin: 100px auto;
+}
+
+.card {
+  border-radius: 4px;
+  background: linear-gradient(135deg, #BC7EDA, rgba(124, 100, 174, 0.5));
+  box-shadow: 0 10px 50px #7C64AE;
+  color: #fff;
+  font-weight: 400;
+}
+
+.card__folder {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__section:first-child .card__folder {
+  padding-top: 40px;
+}
+
+.card__icon {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.card__symbol {
+  height: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.card__icon::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  top: 0;
+  left: 32px;
+  margin-left: -1px;
+  background: #fff;
+  z-index: 1;
+}
+
+.card__name {
+  flex-grow: 1;
+}
+
+.card__control {
+  line-height: 0;
+}
+
+.card__section_sub .card__icon::before {
+  top: -20px;
+}
+
+.card__content {
+  background: #605280;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__subfolder {
+  padding: 10px 0 10px 34px;
+  position: relative;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.15s ease-in-out;
+}
+
+.card__subfolder:hover {
+  color: #fff;
+}
+
+.card__subfolder::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 8px;
+  margin-top: -4px;
+}
+
+.card__subfolder::after,
+.card__content::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #fff;
+  opacity: 0.5;
+  transform: translateY(8px);
+}
+
+.card__subfolder::after {
+  height: 16px;
+  left: 11px;
+  top: -16px;
+}
+
+.card__content::after {
+  left: 31px;
+  height: 36px;
+  bottom: 0;
+}
+
+.card__subfolder:first-child::after {
+  height: 36px;
+  top: -36px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 3</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Hints:
+
+    1.
+    Even though 'photos' and 'files' elements look a bit different,
+    they have the same meaning in terms of the interface.
+    They are just displayed in different states, so it's better to let them share their html code.
+
+    2.
+    We achieve support for any background of the subfolder by rendering connecting lines in each of the list items.
+    If we had just one line that is overlapped by white circles with purple background,
+    we'd have some problems with future css scalability.
+
+  -->
+
+  <div class="root">
+    <div class="card">
+      <div class="card__section card__section_sub">
+        <div class="card__folder">
+          <div class="card__icon">
+            <img src="./img/photo.svg" class="card__symbol" />
+          </div>
+          <div class="card__name">
+            Photos
+          </div>
+          <div class="card__control">
+            <img src="./img/arrow.svg" />
+          </div>
+        </div>
+
+        <div class="card__content">
+          <div class="card__subfolder">
+            Holidays
+          </div>
+          <div class="card__subfolder">
+            Berlin
+          </div>
+          <div class="card__subfolder">
+            Summer vacation
+          </div>
+        </div>
+      </div>
+
+      <div class="card__section">
+        <div class="card__folder">
+          <div class="card__icon">
+            <img src="./img/folder.svg" class="card__symbol" />
+          </div>
+          <div class="card__name">
+            Files
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

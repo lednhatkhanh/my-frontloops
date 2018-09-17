@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: #2f2f2f;
+}
+
+.root {
+  width: 50rem;
+  margin: 100px auto;
+}
+
+.card {
+  background-color: #fcec52;
+  padding: 6rem 6rem 3rem;
+  position: relative;
+  box-shadow: 0 22px 50px rgba(14, 21, 47, 0.2),
+    0 8px 20px rgba(14, 21, 47, 0.2);
+}
+
+.card__header {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.card__title {
+  font-size: 2rem;
+}
+
+.card__close {
+  font-size: 3rem;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.card__close:hover {
+  opacity: 1;
+}
+
+.card__content {
+  background-color: #fff;
+  padding: 6rem 4rem 4rem;
+  position: relative;
+  margin-right: -12rem;
+  box-shadow: 0 22px 50px rgba(14, 21, 47, 0.2),
+    0 8px 20px rgba(14, 21, 47, 0.2);
+  margin-bottom: 6rem;
+}
+
+.card__avatar {
+  position: absolute;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  top: -3rem;
+}
+
+.form {}
+
+.form__row {
+  margin-top: 2rem;
+}
+
+.form__row:first-child {
+  margin-top: 0;
+}
+
+.field-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr) );
+}
+
+.field__label {
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.input {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #dedede;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+}
+
+textarea.input {
+  min-height: 80px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.card__footer {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 1rem;
+}
+
+.card__action {
+  font-size: 1.8rem;
+  color: #333;
+  opacity: 0.7;
+  transition: opacity 0.15s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card__action:hover {
+  opacity: 1;
+}
