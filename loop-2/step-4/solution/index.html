@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 4</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Hints:
+
+    1.
+    You may notice that the background photo itself is quite light
+    and white text has a poor contrast when placed on it.
+    Whenever you render a text on any dynamically changing image in html (e.g. it's passed from our database),
+    you should take care of color contrast and usually it's about adding an overlay under the text.
+
+    2.
+    The easiest way to center an absolutely position element right now is by using css transforms.
+    TranslateX -50% moves our element by half of its width.
+    Negative margins could've also worked for elements with fixed width.
+    But if we have some fluid element, we'll need to introduce some css hacks in order to position it right.
+
+  -->
+
+  <div class="root">
+    <div class="root__inner">
+      <div class="menu">
+        <div class="menu__item">
+          <a href="#" class="menu__button">
+            <img src="./img/event.svg" class="menu__icon" />
+          </a>
+        </div><!--
+        --><div class="menu__item">
+          <a href="#" class="menu__button">
+            <img src="./img/finance.svg" class="menu__icon" />
+          </a>      </div><!--
+        --><div class="menu__item menu__item_active">
+          <a href="#" class="menu__button">
+            <img src="./img/cafe.svg" class="menu__icon" />
+          </a>
+
+          <div class="tooltip tooltip_active">
+            <div class="content">
+              <div class="content__header" style="background-image: url('./img/food.jpg')">
+                <div class="content__intro">
+                  <div class="content__title">
+                    Food
+                  </div>
+                  <div class="content__subtitle">
+                    <img src="./img/location.svg" class="content__icon" />
+                    <span class="content__location">
+                      Madrid
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="content__item">
+                <span class="content__item-name">
+                  Pizza
+                </span>
+                <span class="content__item-count">
+                  17
+                </span>
+              </a>
+
+              <a href="#" class="content__item">
+                <span class="content__item-name">
+                  Sushi
+                </span>
+                <span class="content__item-count">
+                  9
+                </span>
+              </a>
+
+              <a href="#" class="content__item">
+                <span class="content__item-name">
+                  Gourmet
+                </span>
+                <span class="content__item-count">
+                  22
+                </span>
+              </a>
+
+              <a href="#" class="content__item">
+                <span class="content__item-name">
+                  Burger
+                </span>
+                <span class="content__item-count">
+                  14
+                </span>
+              </a>
+            </div>
+          </div>
+        </div><!--
+        --><div class="menu__item">
+          <a href="#" class="menu__button">
+            <img src="./img/gift.svg" class="menu__icon" />
+          </a>
+        </div><!--
+        --><div class="menu__item">
+          <a href="#" class="menu__button">
+            <img src="./img/pets.svg" class="menu__icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
